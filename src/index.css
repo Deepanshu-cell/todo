@@ -1,13 +1,123 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  background-image: url("https://callcentermall.com.co/portal/shared/rs.php?rsid=1183");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.add-task {
+  height: 10vh;
+  width: 100vw;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.add-task form {
+  height: 100%;
+  width: 30%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.add-task form input {
+  padding: 10px;
+  margin: 0px 10px;
+  border-radius: 2px;
+}
+
+.add-task form input[type="button"] {
+  cursor: pointer;
+  font-size: large;
+  background-color: black;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.add-task form input[type="button"]:hover {
+  color: white;
+}
+
+.add-task form input[type="text"] {
+  width: 50%;
+  font-size: larger;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.task-lists {
+  height: 90vh;
+  width: 100vw;
+  border-radius: 10px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.task-lists .todo {
+  height: 100%;
+  width: 50%;
+  color: rgb(255, 255, 255);
+}
+
+.task-lists .finished {
+  height: 100%;
+  width: 50%;
+  color: rgb(255, 255, 255);
+}
+
+.task-lists .list-container {
+  width: 60%;
+  height: 70%;
+  margin: 120px auto;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.task-lists .list-container .title {
+  font-size: 80px;
+  font-weight: 300;
+  height: 20%;
+  background-color: teal;
+  color: rgb(255, 166, 0);
+  padding-top: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.task-lists .list-container .content {
+  background-color: rgb(241, 235, 182);
+  height: 90%;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 50px;
+  overflow-y: auto;
+}
+
+.task-lists .list-container .content div {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.task-lists .list-container .content span {
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.task-lists .list-container .content span:hover {
+  color: rgb(0, 0, 0);
 }
